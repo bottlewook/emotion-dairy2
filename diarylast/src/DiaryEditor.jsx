@@ -35,6 +35,7 @@ const DiaryEditor = ({ onCreate }) => {
       <h2>오늘의 일기</h2>
       <div>
         <input
+          placeholder="작성자를 입력해주세요."
           ref={authorInput}
           name="author"
           value={state.author}
@@ -43,6 +44,7 @@ const DiaryEditor = ({ onCreate }) => {
       </div>
       <div>
         <textarea
+          placeholder="내용을 입력해주세요."
           ref={contentInput}
           name="content"
           value={state.content}
