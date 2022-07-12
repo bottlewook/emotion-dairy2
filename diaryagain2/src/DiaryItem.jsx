@@ -1,4 +1,5 @@
-import { useRef, useState } from "react";
+import React, { useRef, useState } from "react";
+import { useEffect } from "react";
 
 const DiaryItem = ({
   onRemove,
@@ -73,4 +74,4 @@ const DiaryItem = ({
     </div>
   );
 };
-export default DiaryItem;
+export default React.memo(DiaryItem);
