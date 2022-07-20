@@ -12,7 +12,7 @@ import MyHeader from "./components/MyHeader";
 import React, { useReducer, useRef } from "react";
 
 const reducer = (state, action) => {
-  const newState = [];
+  let newState = [];
   switch (action.type) {
     case "INIT": {
       return action.data;
